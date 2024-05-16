@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EDEB"
+    android:padding="5dp">
+
+    <!-- Top Row: What Item -->
+    <TextView
+        android:id="@+id/label_what"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/what_item"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/what_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <EditText
+        android:id="@+id/what_text"
+        android:background="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_what"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="2.7" />
+
+    <!-- Second Row: Start Date and End Date -->
+    <TextView
+        android:id="@+id/label_start_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/startDate"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/start_date"
+        app:layout_constraintTop_toBottomOf="@id/what_text"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <EditText
+        android:id="@+id/start_date"
+        android:background="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/what_text"
+        app:layout_constraintHorizontal_weight="2.7" />
+
+    <TextView
+        android:id="@+id/label_end_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/endDate"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/end_date"
+        app:layout_constraintTop_toBottomOf="@id/start_date"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <EditText
+        android:id="@+id/end_date"
+        android:background="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_date"
+        app:layout_constraintHorizontal_weight="2.7" />
+
+    <!-- Where -->
+    <TextView
+        android:id="@+id/label_where"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/where"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/where_text"
+        app:layout_constraintTop_toBottomOf="@id/end_date"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <EditText
+        android:id="@+id/where_text"
+        android:background="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_where"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/end_date"
+        app:layout_constraintHorizontal_weight="2.7" />
+
+    <!-- Description -->
+
+    <TextView
+        android:id="@+id/label_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@id/description"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/where_text" />
+
+    <EditText
+        android:id="@+id/description"
+        android:background="#ffffff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/where_text"
+        app:layout_constraintHorizontal_weight="2.7" />
+
+    <!-- Buttons: Capture, Add, List -->
+    <Button
+        android:id="@+id/photo_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_size"
+        android:text="@string/photo"
+        android:textSize="@dimen/text_size"
+        android:background="#C6DEE0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_size"
+        android:text="@string/add"
+        android:textSize="@dimen/text_size"
+        android:background="#C6DEE0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_size"
+        android:text="@string/list"
+        android:textSize="@dimen/text_size"
+        android:background="#C6DEE0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="163dp"
+        android:layout_height="135dp"
+        android:background="#DBE2EC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list"
+        app:layout_constraintVertical_bias="0.163" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

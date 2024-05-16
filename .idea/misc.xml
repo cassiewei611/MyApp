@@ -1,0 +1,23 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ITU/MMAD2022/Code/ShoppingV3/app/src/main/res/layout/shopping.xml" value="0.35545023696682465" />
+        <entry key="..\:/ITU/MMAD2022/Week7/toGitHub/ShoppingLiveData/app/src/main/res/layout/shoppingmain.xml" value="0.2708333333333333" />
+        <entry key="..\:/ITU/MMAD2022/Week7/toGitHub/ShoppingV5/app/src/main/res/layout-land/shopping.xml" value="0.1" />
+        <entry key="..\:/ITU/MMAD2022/Week7/toGitHub/ShoppingV5/app/src/main/res/layout/fragment_ui.xml" value="0.1" />
+        <entry key="..\:/ITU/MMAD2022/Week7/toGitHub/ShoppingV5/app/src/main/res/layout/shoppingmain.xml" value="0.1" />
+        <entry key="..\:/ITU/MMAD2022/Week8/toGitHub/ShoppingV6/app/src/main/res/layout-land/fragment_list.xml" value="0.14142480211081795" />
+        <entry key="..\:/ITU/MMAD2022/Week8/toGitHub/ShoppingV6/app/src/main/res/layout-land/fragment_ui.xml" value="0.8328173374613003" />
+        <entry key="..\:/ITU/MMAD2022/Week8/toGitHub/ShoppingV6/app/src/main/res/layout/fragment_list.xml" value="0.25402843601895736" />
+        <entry key="..\:/ITU/MMAD2022/Week8/toGitHub/ShoppingV6/app/src/main/res/layout/fragment_ui.xml" value="0.8328173374613003" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/UIFragment">
+
+    <fragment
+        android:id="@+id/UIFragment"
+        android:name="dk.itu.shopping.UIFragment"
+        android:label="UIFragment" >
+        <action
+            android:id="@+id/action_UIFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="dk.itu.shopping.ListFragment"
+        android:label="fragment_first">
+        <action
+            android:id="@+id/action_ListFragment_to_UIFragment"
+            app:destination="@id/UIFragment" />
+    </fragment>
+
+
+
+</navigation>

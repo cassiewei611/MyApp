@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dorming</string>
+    <string name="photo">Capture Dorm Photo</string>
+    <string name="add">Post new dorm</string>
+    <string name="delete">Delete item</string>
+    <string name="what_item">Name</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
+    <string name="description">Description</string>
+    <string name="where">Position</string>
+    <string name="list">Check existing dorm</string>
+    <string name="back">Back</string>
+    <string name="empty_toast">Please type something</string>
+    <string name="removed">Removed </string>
+</resources>

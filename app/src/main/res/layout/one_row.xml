@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="8dp">
+
+	<!-- Display the item position -->
+	<TextView
+		android:id="@+id/item_no"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/text_size"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<!-- Display what the item is -->
+	<TextView
+		android:id="@+id/item_what"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toBottomOf="@id/item_no"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<!-- Display where the item is from -->
+	<TextView
+		android:id="@+id/item_where"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toBottomOf="@id/item_what"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<!-- Display the start date associated with the item -->
+	<TextView
+		android:id="@+id/item_startDate"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toBottomOf="@id/item_where"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<!-- Display the end date associated with the item -->
+	<TextView
+		android:id="@+id/item_endDate"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toBottomOf="@id/item_startDate"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<!-- Display the item description -->
+	<TextView
+		android:id="@+id/item_description"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:gravity="center_vertical"
+		app:layout_constraintTop_toBottomOf="@id/item_endDate"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<!-- New ImageView to display an image related to the item -->
+	<ImageView
+		android:id="@+id/item_image"
+		android:layout_width="0dp"
+		android:layout_height="200dp"
+		android:background="#FFBB86FC"
+	    app:layout_constraintTop_toBottomOf="@id/item_description"
+	    app:layout_constraintStart_toStartOf="parent"
+	    app:layout_constraintEnd_toEndOf="parent"
+	   app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
